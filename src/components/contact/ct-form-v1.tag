@@ -8,7 +8,7 @@
         <div if={ errorNet } class="alert alert-danger animated fadeIn" role="alert">
           <strong>Se produjo un problema al enviar su solicitud. Por favor, póngase en contacto con un administrador.</strong>
         </div>
-        <form onsubmit={ contactRequest }>
+        <form ref="contactForm" onsubmit={ contactRequest }>
           <!-- https://vincu.com/mx/empresas/contacto/#wpcf7-f1526-p1524-o1 -->
           <div style="display: none;">
             <input type="hidden" name="_wpcf7" value="1526">
@@ -95,17 +95,8 @@
 
     contactRequest(e) {
       e.preventDefault()
-      const form = new FormData()
-      form.append('your-name', self.refs.yourName.value)
-      form.append('your-email', self.refs.yourEmail.value)
-      form.append('your-phone', self.refs.yourPhone.value)
-      form.append('your-message', self.refs.yourMessage.value)
-      form.append('_wpcf7', '1526')
-      form.append('_wpcf7_version', '5.0.1')
-      form.append('_wpcf7_locale', 'es_CO')
-      form.append('_wpcf7_unit_tag', 'wpcf7-f1526-p1524-o1')
-      form.append('_wpcf7_container_post', '1524')
-      fetch('https://vincu.com/mx/empresas/contacto/#wpcf7-f1526-p1524-o1', {
+      const form = new FormData(self.refs.contactForm)
+      fetch('https://vincu.com/wp-json/contact-form-7/v1/contact-forms/1526/feedback', {
         method: 'POST',
         body: form,
         headers: {
