@@ -1,0 +1,123 @@
+/**
+  These style rules assumes bootstrap3 rules are already available.
+**/
+
+.vincu-title {
+  & small {
+    font-size: 18px;
+  }
+  font-family: $font-vincu-title;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.vincu-title-super {
+  & small {
+    font-size: 18px;
+  }
+  font-family: $font-vincu-title;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.vincu-title-large {
+  & small {
+    font-size: 18px;
+  }
+  font-size: 48px;
+  font-family: $font-vincu-title;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.vincu-title-lite {
+  font-family: $font-vincu-title;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.vincu-header {
+  margin-bottom: 4rem;
+}
+
+.vincu-sub-title {
+  font-size: 16px;
+  max-width: 835px;
+}
+
+.btn.btn-vincu {
+  border: none;
+  border-radius: 2px;
+  padding: 6px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  &.btn-bold {
+    font-weight: 500;
+  }
+  &.btn-bolder {
+    font-weight: bold;
+  }
+  &.btn-md {
+    padding: 6px 18px;
+  }
+  &.btn-lg {
+    padding: 13px 20px;
+  }
+  &.btn-default {
+    color: $color-white;
+    background-color: $color-vincu-text;
+    &:hover {
+      background-color: $color-vincu-default-hover;
+    }
+    &:active,
+    &.active {
+      background-color: $color-vincu-default-action;
+    }
+  }
+  &.btn-outline-default {
+    color: $color-vincu-default;
+    background-color: transparent;
+    border: 1px solid $color-vincu-default;
+  }
+  &.btn-success {
+    background-color: $color-vincu-success;
+    border: 1px solid $color-vincu-success;
+    &:hover {
+      background-color: $color-vincu-success-hover;
+      border: 1px solid $color-vincu-success-hover;
+    }
+    &:active,
+    &.active {
+      background-color: $color-vincu-success-action;
+      border: 1px solid $color-vincu-success-action;
+    }
+  }
+  &.btn-info {
+    background-color: $color-vincu-info;
+    border: 1px solid $color-vincu-info;
+    &:hover {
+      background-color: $color-vincu-info-hover;
+      border: 1px solid $color-vincu-info-hover;
+    }
+    &:active,
+    &.active {
+      background-color: $color-vincu-info-action;
+      border: 1px solid $color-vincu-info-action;
+    }
+  }
+  &.btn-inverse-info {
+    color: $color-vincu-info;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    &:hover {
+      background-color: $color-vincu-inverse-hover;
+      border: 1px solid $color-vincu-inverse-hover;
+    }
+  }
+  &.btn-outline-info {
+    color: $color-vincu-info;
+    background-color: transparent;
+    border: 1px solid $color-vincu-info;
+  }
+}

@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'vincuicons';
+  src: url('https://s3-us-west-1.amazonaws.com/vincuventas/vincuicons.eot?xsgp7h');
+  src: url('https://s3-us-west-1.amazonaws.com/vincuventas/vincuicons.eot?xsgp7h#iefix') format('embedded-opentype'), url('https://s3-us-west-1.amazonaws.com/vincuventas/vincuicons.ttf?xsgp7h') format('truetype'), url('https://s3-us-west-1.amazonaws.com/vincuventas/vincuicons.woff?xsgp7h') format('woff'), url('https://s3-us-west-1.amazonaws.com/vincuventas/vincuicons.svg?xsgp7h#vincuicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.vincu-icon {
+  display: inline-block;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vincuicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.vincu-miCuenta:before {
+  content: "\e934";
+}
+.vincu-documento:before {
+  content: "\e931";
+}
+.vincu-MeGustaLine:before {
+  content: "\e932";
+}
+.vincu-moto:before {
+  content: "\e919";
+}
+.vincu-buscar:before {
+  content: "\e928";
+}
+.vincu-comments2:before {
+  content: "\e929";
+}
+.vincu-corretaje:before {
+  content: "\e92a";
+}
+.vincu-crearOferta:before {
+  content: "\e92b";
+}
+.vincu-freelance:before {
+  content: "\e92c";
+}
+.vincu-obra-labor:before {
+  content: "\e92d";
+}
+.vincu-prestacion-servicios:before {
+  content: "\e92e";
+}
+.vincu-termino-definido:before {
+  content: "\e92f";
+}
+.vincu-termino-indefinido:before {
+  content: "\e930";
+}
+.vincu-arrowUp:before {
+  content: "\e935";
+}
+.vincu-arrowDown:before {
+  content: "\e936";
+}
+.vincu-arrowRight:before {
+  content: "\e927";
+}
+.vincu-arrowLeft:before {
+  content: "\e933";
+}
+.vincu-password:before {
+  content: "\e91d";
+}
+.vincu-ajustanAlgo:before {
+  content: "\e900";
+}
+.vincu-blind:before {
+  content: "\e901";
+}
+.vincu-calendar:before {
+  content: "\e902";
+}
+.vincu-camioneta:before {
+  content: "\e903";
+}
+.vincu-Carro:before {
+  content: "\e904";
+}
+.vincu-checked:before {
+  content: "\e905";
+}
+.vincu-closed:before {
+  content: "\e906";
+}
+.vincu-comments:before {
+  content: "\e907";
+}
+.vincu-download:before {
+  content: "\e908";
+}
+.vincu-educacion:before {
+  content: "\e909";
+}
+.vincu-eliminar:before {
+  content: "\e90a";
+}
+.vincu-email:before {
+  content: "\e90b";
+}
+.vincu-enviarOferta:before {
+  content: "\e90c";
+}
+.vincu-error:before {
+  content: "\e90d";
+}
+.vincu-experiencia:before {
+  content: "\e90e";
+}
+.vincu-facebook:before {
+  content: "\e90f";
+}
+.vincu-horario:before {
+  content: "\e910";
+}
+.vincu-imprimir:before {
+  content: "\e911";
+}
+.vincu-leido:before {
+  content: "\e912";
+}
+.vincu-linkedin:before {
+  content: "\e913";
+}
+.vincu-lista:before {
+  content: "\e914";
+}
+.vincu-mas:before {
+  content: "\e915";
+}
+.vincu-masInfo:before {
+  content: "\e916";
+}
+.vincu-meGusta:before {
+  content: "\e917";
+}
+.vincu-mobile:before {
+  content: "\e918";
+}
+.vincu-new:before {
+  content: "\e91a";
+}
+.vincu-noAjustan:before {
+  content: "\e91b";
+}
+.vincu-noMeGusta:before {
+  content: "\e91c";
+}
+.vincu-phone:before {
+  content: "\e91e";
+}
+.vincu-porAplicar:before {
+  content: "\e91f";
+}
+.vincu-recomendados:before {
+  content: "\e920";
+}
+.vincu-recomendadosLine:before {
+  content: "\e921";
+}
+.vincu-required:before {
+  content: "\e922";
+}
+.vincu-sueldo:before {
+  content: "\e923";
+}
+.vincu-twitter:before {
+  content: "\e924";
+}
+.vincu-ubicacion:before {
+  content: "\e925";
+}
+.vincu-whastapp:before {
+  content: "\e926";
+}
+.vincu-recomendados {
+  color: #fed51d;
+}
+.vincu-meGusta {
+  color: #00c9c4;
+}
+.vincu-ajustanAlgo {
+  color: #cbce16;
+}
+.vincu-dark-grey {
+  color: #4f5453;
+}
+.vincu-dark-red {
+  color: #d82525;
+}
+.vincu-orange {
+  color: #f9780f;
+}
+.vincu-yellow {
+  color: #fed51d;
+}
+.vincu-green {
+  color: #cbce16;
+}
+.vincu-light-red {
+  color: #e95151;
+}
+.vincu-med-grey {
+  color: #96a5a1;
+}
+.vincu-light-grey {
+  color: #f0f1ef;
+}
+.vincu-light-teal {
+  color: #00c9c4;
+}
+.vincu-dark-teal {
+  color: #00939a;
+}
+.vincu-bg-dark-grey {
+  background-color: #4f5453;
+}
+.vincu-bg-dark-red {
+  background-color: #d82525;
+}
+.vincu-bg-orange {
+  background-color: #f9780f;
+}
+.vincu-bg-yellow {
+  background-color: #fed51d;
+}
+.vincu-bg-green {
+  background-color: #cbce16;
+}
+.vincu-bg-light-red {
+  background-color: #e95151;
+}
+.vincu-bg-med-grey {
+  background-color: #96a5a1;
+}
+.vincu-bg-light-grey {
+  background-color: #f0f1ef;
+}
+.vincu-bg-light-teal {
+  background-color: #00c9c4;
+}
+.vincu-bg-dark-teal {
+  background-color: #00939a;
+}

@@ -1,0 +1,24 @@
+@import '~animate.css/animate.css';
+
+@import './variables.scss';
+@import './vincu.scss';
+@import './vincuicons.scss';
+@import './wp-overrides.scss';
+
+@import './mixins/_all.scss';
+@import './helpers/_all.scss';
+@import './components/contact/_all.scss';
+
+contact {
+  display: block;
+  background-color: $color-white;
+  width: 100%;
+  overflow: hidden;
+  & * {
+    font-family: 'Open Sans', sans-serif;
+    color: $color-vincu-text;
+  }
+  & .container {
+    max-width: 990px;
+  }
+}

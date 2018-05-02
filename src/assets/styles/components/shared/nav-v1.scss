@@ -1,0 +1,26 @@
+shared-nav-v1 {
+  width: 100%;
+  & > nav.navbar-default {
+    @include shadow(1);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: 0;
+    border-bottom: 0.5rem solid $color-vincu-accent;
+    & .navbar-header a.navbar-brand {
+      transition: 1s ease;
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+    & .nav > li > a {
+      padding: 1.5rem 0.5rem;
+      transition: 1s ease;
+      &:hover, &:active {
+        color: $color-vincu-info;
+      }
+    }
+  }
+}
