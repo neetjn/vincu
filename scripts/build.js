@@ -40,9 +40,10 @@ webpackConfig.entry = `./src/containers/${ classifier }/${ container }.js`
 webpack(webpackConfig, (error, status) => {
   if (error || status.hasErrors()) {
     console.log('An error has occurred while building bundle.')
-    console.log(status)
+    console.log(`Error:\n${ status }`)
   } else {
     console.log('Bundle built successfully!')
+    console.log(`Build Status:\n${ status }`)
     if (upload) {
       const awsConfig = require('../aws.config.json')
       const bundlePath = `${ webpackConfig.output.path }/${ webpackConfig.output.filename }`

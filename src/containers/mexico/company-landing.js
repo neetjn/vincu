@@ -1,4 +1,4 @@
-import '@/assets/styles/_company-landing.scss'
+import '@/assets/styles/containers/mexico/_company-landing.scss'
 import '@/components/mexico/company-landing/about-v1.tag'
 import '@/components/mexico/company-landing/banner-v1.tag'
 import '@/components/mexico/company-landing/blog-v1.tag'

@@ -18,7 +18,7 @@
             </h1>
           </div>
           <div class="plan-card-body">
-            <p>Nuestro plan básico te ofrece hasta <strong>5 vacantes gratis</strong> por mes.</p>
+            <p>Nuestro plan básico te ofrece hasta <strong>5 ofertas gratis</strong> por mes.</p>
             <ul>
               <li>Accede a los mejores candidatos para tu oferta.</li>
               <li>Impulsamos tu oferta*.</li>
@@ -41,7 +41,7 @@
           </div>
           <div class="plan-card-body">
             <p>¿Necesitas más?
-                Te ofrecemos un paquete de <strong>5 vacantes adicionales</strong>, con vigencia de un año.</p>
+                Te ofrecemos un paquete de <strong>5 ofertas adicionales</strong>, con vigencia de un año.</p>
             <ul>
               <li>Accede a los mejores candidatos para tu oferta.</li>
               <li>Impulsamos tu oferta*.</li>
@@ -63,7 +63,7 @@
             </h1>
           </div>
           <div class="plan-card-body">
-            <p>A nuestros usuarios corporativos ofrecemos planes de 6 y 12 meses, con <strong>vacantes ilimitadas</strong>.</p>
+            <p>A nuestros usuarios corporativos ofrecemos planes de 6 y 12 meses, con <strong>ofertas ilimitadas</strong>.</p>
             <ul>
               <li>Accede a los mejores candidatos para tu oferta.</li>
               <li>Impulsamos tu oferta*.</li>
