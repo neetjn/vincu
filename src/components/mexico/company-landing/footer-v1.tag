@@ -1,4 +1,4 @@
-<cl-footer-v1>
+<footer-v1>
   <sitemap>
     <div class="container">
       <h1 class="vincu-title vincu-header">
@@ -128,4 +128,4 @@
       </div>
     </div>
   </footer>
-</cl-footer-v1>
+</footer-v1>

@@ -1,7 +1,0 @@
-import './cl-about-v1.tag'
-import './cl-banner-v1.tag'
-import './cl-countries-v1.tag'
-import './cl-blog-v1.tag'
-import './cl-jobs-v1.tag'
-import './cl-plans-v1.tag'
-import './cl-timeline-v1.tag'

@@ -1,4 +1,4 @@
-<ct-form-v1>
+<form-v1>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6 col-xs-12">
@@ -104,7 +104,7 @@
     contactRequest(e) {
       e.preventDefault()
       const form = new FormData(self.refs.contactForm)
-      fetch('https://vincu.com/wp-json/contact-form-7/v1/contact-forms/1526/feedback', {
+      fetch('https://vincu.com/wp-json/contaform-7/v1/contaforms/1526/feedback', {
         method: 'POST',
         body: form,
         headers: {
@@ -125,4 +125,4 @@
       })
     }
   </script>
-</ct-form-v1>
+</form-v1>

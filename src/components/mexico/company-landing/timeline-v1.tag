@@ -1,4 +1,4 @@
-<cl-timeline-v1>
+<timeline-v1>
   <div class="container">
     <h1 class="vincu-title">¡Vincu hace el trabajo por ti!</h1>
     <p>Analizamos tu oferta frente a todos los CVs de nuestra base de datos<br/> para encontrarte los mejores candidatos</p>
@@ -58,4 +58,4 @@
       <img class="timeline-candidate-screens animated slideInRight" src="https://s3-us-west-1.amazonaws.com/vincuventas/vincu-laptop.png" />
     </div>
   </div>
-</cl-timeline-v1>
+</timeline-v1>

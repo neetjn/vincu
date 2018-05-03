@@ -1,4 +1,4 @@
-<cl-blog-v1>
+<blog-v1>
   <div class="container">
     <h1 class="vincu-title-large">
       <small>Mantente</small>
@@ -69,4 +69,4 @@
         })
     })
   </script>
-</cl-blog-v1>
+</blog-v1>

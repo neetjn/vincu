@@ -1,4 +1,4 @@
-<cl-plans-v1>
+<plans-v1>
   <div class="container">
     <h1 class="vincu-title-large vincu-header">
       <small>Nuestros</small><br />
@@ -57,4 +57,4 @@
       </div>
     </div>
   </div>
-</cl-plans-v1>
+</plans-v1>

@@ -1,4 +1,4 @@
-<cl-about-v1>
+<about-v1>
   <div class="container">
     <h1 class="vincu-title-large vincu-header">
       <small>Dicen De</small><br />
@@ -101,4 +101,4 @@
       </div>
     </div>
   </div>
-</cl-about-v1>
+</about-v1>

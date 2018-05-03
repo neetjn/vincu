@@ -1,4 +1,4 @@
-<pr-plans-v1>
+<plans-v1>
   <div class="container">
     <h1 class="vincu-title-large">
       <small>Nuestros Planes</small><br />
@@ -87,4 +87,4 @@
       </li>
     </ul>
   </div>
-</pr-plans-v1>
+</plans-v1>

@@ -1,4 +1,4 @@
-<cl-banner-v1>
+<banner-v1>
   <div class="banner-background">
     <div class="row">
       <div class="col-md-5 col-sm-6 col-xs-12"
@@ -25,4 +25,4 @@
       </div>
     </div>
   </div>
-</cl-banner-v1>
+</banner-v1>

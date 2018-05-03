@@ -1,4 +1,4 @@
-<ct-banner-v1>
+<banner-v1>
   <div class="container">
     <div class="banner-container">
       <div class="banner-image">
@@ -11,4 +11,4 @@
       <p>¡Próximamente estaremos lanzando en México la única plataforma de contratación especializada en el área comercial !</p>
     </div>
   </div>
-</ct-banner-v1>
+</banner-v1>

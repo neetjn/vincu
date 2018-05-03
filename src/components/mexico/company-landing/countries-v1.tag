@@ -1,4 +1,4 @@
-<cl-countries-v1>
+<countries-v1>
   <div class="container text-center">
     <h1 class="vincu-title">Nosotros te ayudamos</h1>
     <h4 class="vincu-title-lite vincu-header">¡Disminuimos tu tiempo en el proceso de reclutamiento!</h4>
@@ -78,4 +78,4 @@
       }
     ]
   </script>
-</cl-countries-v1>
+</countries-v1>
