@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './src/containers/mexico/contact.js',
+  entry: '',
   output: {
     path: path.join(__dirname, './dist'),
     publicPath: 'dist/',

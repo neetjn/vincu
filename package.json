@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack --config webpack.config.js",
     "dev": "node_modules/.bin/webpack-dev-server --config webpack.config.js --port 3000 --host 0.0.0.0",
     "devsafe": "node_modules/.bin/webpack-dev-server --config webpack.config.js --host dev.vincuventas.com --port 3000",
     "lint": "node_modules/.bin/eslint src/**.js",
@@ -14,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^3.6.1",
+    "aws-sdk": "^2.231.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
