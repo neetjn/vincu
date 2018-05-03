@@ -1,3 +1,5 @@
+build:
+	node scripts/build.js --classifier=${classifier} --container=${container}
 bundle:
 	node scripts/build.js --upload --classifier=${classifier} --container=${container}
 serve:

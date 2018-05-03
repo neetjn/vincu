@@ -1,6 +1,6 @@
-import '@/assets/styles/containers/mexico/_contact.scss'
-import '@/components/mexico/contact/banner-v1.tag'
-import '@/components/mexico/contact/form-v1.tag'
+import '@/assets/styles/containers/empresas/_contact.scss'
+import '@/components/empresas/contact/banner-v1.tag'
+import '@/components/empresas/contact/form-v1.tag'
 import './contact.tag'
 
 import riot from 'riot'
