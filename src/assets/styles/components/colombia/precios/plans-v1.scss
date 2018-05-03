@@ -99,7 +99,7 @@ plans-v1 {
     & .plan-card-body {
       flex: 1;
       & > p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 20px;
         height: 82px;
         @media(max-width: $screen-lg) {

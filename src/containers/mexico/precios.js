@@ -1,5 +1,5 @@
 import '@/assets/styles/containers/mexico/_precios.scss'
-import '@/components/colombia/precios/plans-v1.tag'
+import '@/components/mexico/precios/plans-v1.tag'
 import '@/components/shared/footer-v1.tag'
 import '@/components/shared/nav-v1.tag'
 import './precios.tag'
