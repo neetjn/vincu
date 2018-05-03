@@ -1,8 +1,8 @@
 import './assets/styles/_contact.scss'
 
-import './components/shared/'
-import './components/contact/'
-import './components/contact.tag'
+import './components/mexico/contact/banner-v1.tag'
+import './components/mexico/contact/form-v1.tag'
+import './contact.tag'
 
 import riot from 'riot'
 

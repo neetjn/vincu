@@ -1,8 +1,9 @@
-import './assets/styles/_precios.scss'
+import './assets/styles/containers/mexico/_precios.scss'
 
-import './components/shared/'
-import './components/precios/'
-import './components/precios.tag'
+import './components/colombia/precios/plans-v1.tag'
+import './components/shared/footer-v1.tag'
+import './components/shared/nav-v1.tag'
+import './precios.tag'
 
 import riot from 'riot'
 
