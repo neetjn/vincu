@@ -19,45 +19,53 @@
           </div>
           <div class="form-group">
             <label for="your-name">Nombre *</label>
-            <input ref="yourName"
-                   name="your-name"
-                   type="text"
-                   value=""
-                   class="form-control"
-                   aria-required="true"
-                   aria-invalid="false"
-                   required />
+            <span class="wpcf7-form-control-wrap your-name">
+              <input ref="yourName"
+                    name="your-name"
+                    type="text"
+                    value=""
+                    class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                    aria-required="true"
+                    aria-invalid="false"
+                    required />
+            </span>
           </div>
           <div class="form-group">
             <label for="your-email">Correo Electrónico *</label>
-            <input ref="yourEmail"
-                   name="your-email"
-                   type="email"
-                   value=""
-                   class="form-control"
-                   aria-required="true"
-                   aria-invalid="false"
-                   required />
+            <span class="wpcf7-form-control-wrap your-email">
+              <input ref="yourEmail"
+                    name="your-email"
+                    type="email"
+                    value=""
+                    class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                    aria-required="true"
+                    aria-invalid="false"
+                    required />
+            </span>
           </div>
           <div class="form-group">
             <label for="form-group">Teléfono *</label>
-            <input ref="yourPhone"
-                   name="your-phone"
-                   type="tel"
-                   value=""
-                   class="form-control"
-                   aria-required="true"
-                   aria-invalid="false" />
+            <span class="wpcf7-form-control-wrap your-phone">
+              <input ref="yourPhone"
+                    name="your-phone"
+                    type="tel"
+                    value=""
+                    class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                    aria-required="true"
+                    aria-invalid="false" />
+            </span>
           </div>
           <div class="form-group">
             <label for="your-message">Mensaje *</label>
-            <textarea ref="yourMessage"
-                      name="your-message"
-                      class="form-control"
-                      cols="40"
-                      rows="10"
-                      aria-invalid="false"
-                      required></textarea>
+            <span class="wpcf7-form-control-wrap your-message">
+              <textarea ref="yourMessage"
+                        name="your-message"
+                        class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                        cols="40"
+                        rows="10"
+                        aria-invalid="false"
+                        required></textarea>
+            </span>
           </div>
           <button type="submit" class="btn">Enviar</button>
         </form>
@@ -100,7 +108,7 @@
         method: 'POST',
         body: form,
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'multipart/form-data'
         }
       }).then(response => {
         if (response.status == 200) {
