@@ -1,14 +1,12 @@
 @import '~animate.css/animate.css';
-
-@import './variables.scss';
-@import './vincu.scss';
-@import './vincuicons.scss';
-@import './wp-overrides.scss';
-
-@import './mixins/_all.scss';
-@import './helpers/_all.scss';
-@import './components/company-landing/_all.scss';
-@import './components/shared/_all.scss';
+@import '../../variables.scss';
+@import '../../vincu.scss';
+@import '../../vincuicons.scss';
+@import '../../wp-overrides.scss';
+@import '../../mixins/_all.scss';
+@import '../../helpers/_all.scss';
+@import '../../components/mexico/company-landing/_all.scss';
+@import '../../components/shared/_all.scss';
 
 company-landing {
   display: block;

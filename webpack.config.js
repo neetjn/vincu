@@ -2,13 +2,18 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './src/contact.js',
+  entry: './src/containers/mexico/contact.js',
   output: {
     path: path.join(__dirname, './dist'),
     publicPath: 'dist/',
     filename: 'dist.js',
     libraryTarget: 'umd',
     umdNamedDefine: true
+  },
+  resolve: {
+    alias: {
+      '@': path.join(__dirname, '/src')
+    }
   },
   module: {
     rules: [
