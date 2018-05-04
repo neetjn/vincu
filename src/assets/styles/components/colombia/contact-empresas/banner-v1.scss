@@ -1,0 +1,11 @@
+banner-v1 {
+  display: block;
+  & h2 {
+    margin-top: 15%;
+  }
+  & hr {
+    border: 1px solid $color-vincu-stale-blue;
+    width: 150px;
+    margin-bottom: 4rem;
+  }
+}

@@ -1,7 +1,7 @@
-import '@/assets/styles/containers/empresas/_contact.scss'
-import '@/components/empresas/contact/banner-v1.tag'
-import '@/components/empresas/contact/form-v1.tag'
-import './contact.tag'
+import '@/assets/styles/containers/colombia/_contact-empresas.scss'
+import '@/components/colombia/contact-empresas/banner-v1.tag'
+import '@/components/colombia/contact-empresas/form-v1.tag'
+import './contact-empresas.tag'
 
 import riot from 'riot'
 
