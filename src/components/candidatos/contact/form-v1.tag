@@ -103,24 +103,37 @@
 
     contactRequest(e) {
       e.preventDefault()
-      const form = new FormData(self.refs.contactForm)
-      fetch('https://vincu.com/wp-json/contaform-7/v1/contaforms/1526/feedback', {
+      self.refs.submitButton.disabled = true
+      const formData = new FormData(self.refs.contactForm)
+      fetch('https://vincu.com/wp-json/contact-form-7/v1/contact-forms/1526/feedback', {
         method: 'POST',
-        body: form,
+        body: formData,
         headers: {
-          'Content-Type': 'multipart/form-data'
+          'Accept': 'application/json, text/javascript, */*; q=0.01'
         }
       }).then(response => {
         if (response.status == 200) {
-          self.requestSent = true
-          self.errorNet = false
+          response.json().then(data => {
+            if (data.status == 'validation_failed') {
+              console.error(data)
+              throw Error(`Contact form validation failed`)
+            }
+            else {
+              self.requestSent = true
+              self.errorNet = false
+              self.refs.submitButton.disabled = false
+              self.update()
+            }
+          })
         }
-        else
+        else {
           throw Error('Unexpected Contact Form Response')
-        self.update()
+        }
       }).catch(error => {
         self.requestSent = false
         self.errorNet = true
+        self.refs.submitButton.disabled = false
+        console.error(error)
         self.update()
       })
     }
