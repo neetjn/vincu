@@ -1,0 +1,136 @@
+countries-v1 {
+  display: block;
+  background-image: linear-gradient(to bottom, #f1faf9, #f4fbfc, #f9fcfe, #fdfdff, #ffffff);
+  & > .container > h1.vincu-title {
+    font-size: 48px;
+    margin-top: 6rem;
+    @media(max-width: $screen-sm) {
+      margin-top: -40px;
+      font-size: 40px;
+    }
+  }
+  & .country-wrapper {
+    background: url('https://vincu.com/wp-content/uploads/2018/04/bgCentro.png?id=1430');
+    //background: url('https://s3-us-west-1.amazonaws.com/vincuventas/trianglify.svg');
+    background-size: cover;
+    @media(min-width: $screen-md) {
+      padding: 10rem;
+    }
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+    & * {
+      color: $color-white;
+    }
+    & > .row {
+      transform: scale(0.7);
+      @media(min-width: $screen-md) {
+        transform: none;
+      }
+    }
+    & .country-count-container {
+      margin-top: 1rem;
+      & .country-count {
+        font-size: 72px;
+        @media(min-width: $screen-lg) {
+          font-size: 82px;
+        }
+      }
+      & .country-list {
+        font-size: 16px;
+        @media(min-width: $screen-md) {
+          font-size: 20px;
+        }
+        @media(min-width: $screen-lg) {
+          margin-top: 3.5rem;
+          font-size: 30px;
+        }
+        @media(max-width: $screen-sm) {
+          font-size: 24px;
+          width: 200px;
+        }
+      }
+    }
+    & .country-stat-container {
+      padding: 1rem;
+      margin: 1rem;
+      border: 1px solid $color-white;
+      width: 300px;
+      @media(max-width: $screen-lg) {
+        width: 160px;
+      }
+      &#candidatos {
+        float: right;
+        @media(max-width: $screen-md) {
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      &#empresas {
+        float: left;
+        @media(max-width: $screen-md) {
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      & h1 {
+        font-size: 32px;
+        @media(min-width: $screen-md) {
+          font-size: 24px;
+        }
+        @media(min-width: $screen-lg) {
+          font-size: 65px;
+        }
+      }
+      & h4 {
+        margin-top: -1rem;
+      }
+    }
+  }
+  & .company-container {
+    margin: 3rem auto 5rem auto;
+    padding: 1rem 4rem 5rem 4rem;
+    border: 1px solid $color-dull-gray;
+    height: 132px;
+    @media(max-width: $screen-md) {
+      height: auto;
+      padding: 1rem 2rem 5rem 2rem;
+    }
+    @media(max-width: $screen-sm) {
+      padding: 1rem 4rem 0 4rem;
+    }
+    & .company-container-title-wrapper {
+      border-bottom: 1px solid $color-vincu-default;
+      margin: 0 auto 3.5rem auto;
+      width: 100%;
+      @media(min-width: $screen-lg) {
+        width: 50%;
+      }
+      & .company-container-title {
+        display: inline-block;
+        background-color: $color-dash-gray;
+        font-family: $font-vincu-title;
+        font-weight: 500;
+        margin-bottom: -1rem;
+        padding: 0 1rem;
+        @media(max-width: $screen-sm) {
+          font-size: 12px;
+          margin-bottom: -0.6rem;
+        }
+      }
+    }
+    & .company-list {
+      & img {
+        display: inline-block;
+        width: 80%;
+        transition: 0.4s linear;
+        @media(min-width: $screen-lg) {
+          width: 60%;
+        }
+        @media(max-width: $screen-sm) {
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
