@@ -5,7 +5,7 @@
       Para Empresas
     </h1>
     <p class="vincu-sub-title vincu-header">
-      Todos los candidatos crean y publican su hoja de vida gratuitamente por tiempo ilimitado y sin ninguna restricción.<br />
+      Todos los candidatos crean y publican su currículum gratuitamente por tiempo ilimitado y sin ninguna restricción.<br />
       Para las empresas tenemos los siguientes planes:
     </p>
     <div class="row plan-cards-container">
@@ -35,8 +35,8 @@
         <div class="plan-card">
           <div class="plan-card-title">
             <h1 class="vincu-title">
-              <small>Ofertas</small><br />
-              Adicionales
+              <small>Plan</small><br />
+              Pyme
             </h1>
           </div>
           <div class="plan-card-body">
@@ -47,7 +47,7 @@
               <li>Impulsamos tu oferta*.</li>
               <li>1 usuario.</li>
             </ul>
-          <h1 class="vincu-title-lite price-title text-center">$499.00 <small>+ iva</small></h1>
+          <h1 class="vincu-title-lite price-title text-center">$3,800.00 mxn<small>+ iva</small></h1>
           </div>
           <div class="plan-card-actions">
             <a href="https://andreaatehortua.typeform.com/to/haIRwe" class="btn btn-vincu btn-bolder btn-outline-info btn-lg">Contáctanos</a>
@@ -79,11 +79,11 @@
     <p>* Analizamos nuestra base de datos e invitamos a aplicar a tu oferta a todos los candidatos cuya experiencia se ajusta a lo que buscas.</p>
     <h3><strong>¿Tienes alguna pregunta?</strong></h3>
     <ul class="contact-info">
-      <li>
+      <li style="display: none;">
         <i class="ico ico-left vincu-icon vincu-mobile"></i><a href="tel:000-000-000">+1 7495845     322 345 83 61</a>
       </li>
       <li>
-        <i class="ico ico-left vincu-icon vincu-email"></i><a href="mailto:ventas@vincuventas.com">ventas@vincuventas.com</a>
+        <i class="ico ico-left vincu-icon vincu-email"></i><a href="mailto:lina@vincu.com">lina@vincu.com</a>
       </li>
     </ul>
   </div>

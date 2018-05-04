@@ -26,8 +26,8 @@
         <div class="plan-card">
           <div class="plan-card-title">
             <h1 class="vincu-title">
-              <small>Ofertas</small><br />
-              Adicionales
+              <small>Plan</small><br />
+              Pyme
             </h1>
           </div>
           <div class="plan-card-body">

@@ -5,9 +5,9 @@
 @import '../../wp-overrides.scss';
 @import '../../mixins/_all.scss';
 @import '../../helpers/_all.scss';
-@import '../../components/empresas/contact/_all.scss';
+@import '../../components/mexico/contact-empresas/_all.scss';
 
-contact {
+contact-empresas {
   display: block;
   background-color: $color-white;
   width: 100%;

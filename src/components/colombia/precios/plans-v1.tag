@@ -47,7 +47,7 @@
               <li>Impulsamos tu oferta*.</li>
               <li>1 usuario.</li>
             </ul>
-          <h1 class="vincu-title-lite price-title text-center">$499.00 <small>+ iva</small></h1>
+          <h1 class="vincu-title-lite price-title text-center">$599.000 <small>+ iva</small></h1>
           </div>
           <div class="plan-card-actions">
             <a href="https://andreaatehortua.typeform.com/to/haIRwe" class="btn btn-vincu btn-bolder btn-outline-info btn-lg">Contáctanos</a>

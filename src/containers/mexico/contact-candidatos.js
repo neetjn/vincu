@@ -1,7 +1,7 @@
-import '@/assets/styles/containers/candidatos/_contact.scss'
-import '@/components/candidatos/contact/banner-v1.tag'
-import '@/components/candidatos/contact/form-v1.tag'
-import './contact.tag'
+import '@/assets/styles/containers/mexico/_contact-candidatos.scss'
+import '@/components/mexico/contact-candidatos/banner-v1.tag'
+import '@/components/mexico/contact-candidatos/form-v2.tag'
+import './contact-candidatos.tag'
 
 import riot from 'riot'
 
@@ -14,4 +14,4 @@ try {
   console.log('Skipping Vincu Wordpress Cleanup')
 }
 
-riot.mount('contact')
+riot.mount('contact-candidatos')

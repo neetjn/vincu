@@ -50,6 +50,7 @@ plans-v1 {
     box-shadow: 0 8px 4px 0 rgba(173,173,173,0.5);
     & .plan-card-title {
       & h1 {
+        font-size: 32px;
         @media(max-width: $screen-lg) {
           font-size: 24px;
         }
@@ -59,6 +60,7 @@ plans-v1 {
       h1 {
         margin-top: -2.5rem;
         &.price-title {
+          font-size: 20px;
           color: $color-vincu-deep-blue;
           & small { color: $color-vincu-deep-blue; }
         }
