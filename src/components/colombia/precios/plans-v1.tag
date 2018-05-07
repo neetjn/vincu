@@ -27,7 +27,7 @@
             <h1 class="vincu-title-large text-center">Gratis</h1>
           </div>
           <div class="plan-card-actions">
-            <a href="https://andreaatehortua.typeform.com/to/haIRwe" class="btn btn-vincu btn-bolder btn-inverse-info btn-lg">Más Información</a>
+            <a href="https://vincu.com/co/empresas/contacto-empresas/" class="btn btn-vincu btn-bolder btn-inverse-info btn-lg">Crear Cuenta</a>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
           <h1 class="vincu-title-lite price-title text-center">$599.000 <small>+ iva</small></h1>
           </div>
           <div class="plan-card-actions">
-            <a href="https://andreaatehortua.typeform.com/to/haIRwe" class="btn btn-vincu btn-bolder btn-outline-info btn-lg">Contáctanos</a>
+            <a href="https://vincu.com/co/empresas/contacto-empresas/" class="btn btn-vincu btn-bolder btn-outline-info btn-lg">Contáctanos</a>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
             </ul>
           </div>
           <div class="plan-card-actions">
-            <a href="https://andreaatehortua.typeform.com/to/haIRwe" class="btn btn-vincu btn-bolder btn-outline-info btn-lg">Contáctanos</a>
+            <a href="https://vincu.com/co/empresas/contacto-empresas/" class="btn btn-vincu btn-bolder btn-outline-info btn-lg">Contáctanos</a>
           </div>
         </div>
       </div>
@@ -80,7 +80,10 @@
     <h3><strong>¿Tienes alguna pregunta?</strong></h3>
     <ul class="contact-info">
       <li>
-        <i class="ico ico-left vincu-icon vincu-mobile"></i><a href="tel:000-000-000">+1 7495845     322 345 83 61</a>
+        <i class="ico ico-left vincu-icon vincu-phone"></i><a href="tel:7495845">+1 7495845</a>
+      </li>
+      <li>
+        <i class="ico ico-left vincu-icon vincu-mobile"></i><a href="tel:322-345-8361">322-345-8361</a>
       </li>
       <li>
         <i class="ico ico-left vincu-icon vincu-email"></i><a href="mailto:ventas@vincuventas.com">ventas@vincuventas.com</a>

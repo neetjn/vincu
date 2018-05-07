@@ -25,7 +25,8 @@ plans-v1 {
       font-size: 18px;
       padding-right: 2rem;
       @media(max-width: $screen-sm) {
-        display: inline-block;
+        display: block;
+        margin-bottom: 1rem;
       }
       & i {
         position: relative;
@@ -74,10 +75,11 @@ plans-v1 {
       color: $color-vincu-success;
     }
     & ul {
-      padding-left: 2rem;
+      padding-left: 1.5rem;
       height: 114px;
       & li {
         font-size: 16px;
+        padding-bottom: 1rem;
         @media(max-width: $screen-md) {
           font-size: 12px;
         }
