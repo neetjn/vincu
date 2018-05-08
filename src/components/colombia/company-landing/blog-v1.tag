@@ -44,7 +44,7 @@
     const self = this
     self.posts = []
     self.on('mount', function() {
-      fetch('https://blog.vincuventas.com/wp-json/wp/v2/posts?_embed')
+      fetch('https://vincu.com/wp-json/wp/v2/posts?_embed')
         .then(response => {
           response.json()
             .then(data => {
@@ -61,7 +61,7 @@
                   title: decodeURI(post.title.rendered),
                   content: postContent.length > contentSize ? postContent.slice(0, 150) + '...' : postContent,
                   author: post._embedded.author[0].name,
-                  media: decodeURI(post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url)
+                  media: decodeURI(post._embedded['wp:featuredmedia'][0].media_details.sizes.medium_large.source_url)
                 }
               })
               self.update()

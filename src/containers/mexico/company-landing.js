@@ -8,7 +8,6 @@ import '@/components/mexico/company-landing/jobs-v1.tag'
 import '@/components/mexico/company-landing/plans-v1.tag'
 import '@/components/mexico/company-landing/timeline-v1.tag'
 import '@/components/shared/footer-v1.tag'
-import '@/components/shared/nav-v1.tag'
 import './company-landing.tag'
 
 import riot from 'riot'

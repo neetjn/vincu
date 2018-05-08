@@ -25,7 +25,8 @@ plans-v1 {
       font-size: 18px;
       padding-right: 2rem;
       @media(max-width: $screen-sm) {
-        display: inline-block;
+        display: block;
+        margin-bottom: 1rem;
       }
       & i {
         position: relative;
