@@ -1,6 +1,6 @@
 import '@/assets/styles/containers/mexico/_precios.scss'
 import '@/components/mexico/precios/plans-v1.tag'
-import '@/components/shared/footer-v1.tag'
+import '@/components/shared/footer-mx-v1.tag'
 import './precios.tag'
 
 import riot from 'riot'

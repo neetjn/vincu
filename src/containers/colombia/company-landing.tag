@@ -6,5 +6,5 @@
   <about-v1 />
   <blog-v1 />
   <jobs-v1 />
-  <shared-footer-v1 />
+  <footer-co-v1 />
 </company-landing>

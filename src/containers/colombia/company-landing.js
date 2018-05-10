@@ -7,7 +7,7 @@ import '@/components/colombia/company-landing/footer-v1.tag'
 import '@/components/colombia/company-landing/jobs-v1.tag'
 import '@/components/colombia/company-landing/plans-v1.tag'
 import '@/components/colombia/company-landing/timeline-v1.tag'
-import '@/components/shared/footer-v1.tag'
+import '@/components/shared/footer-co-v1.tag'
 import '@/components/shared/nav-v1.tag'
 import './company-landing.tag'
 
