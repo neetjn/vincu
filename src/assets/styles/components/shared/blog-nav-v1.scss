@@ -1,46 +1,125 @@
 blog-nav-v1 {
   display: block;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1rem;
   background-color: $color-white;
   border-bottom: 1px solid $color-deep-gray;
+  overflow: hidden;
   & > .container {
     & > .row:first-child {
-      margin-bottom: 2.5rem;
+      margin-bottom: -0.5rem;
+      & a.search-btn-mobile {
+        display: none;
+        @media(max-width: $screen-lg) {
+          display: inline-block;
+          position: absolute;
+          left: 1rem;
+          top: 1rem;
+          height: 30px;
+          width: 30px;
+          border-radius: 100px;
+          border: 1px solid $color-deep-gray;
+          transition: 0.5s ease;
+          &:hover {
+            opacity: 0.8;
+            border: 1px solid $color-vincu-info-action;
+            & * {
+              color: $color-vincu-info;
+            }
+          }
+          & i {
+            position: relative;
+            top: 5%;
+            left: 25%;
+            font-size: 14px;
+            transition: 0.5s ease;
+          }
+        }
+      }
+      & a.nav-btn-mobile {
+        display: none;
+        @media(max-width: $screen-lg) {
+          display: inline-block;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          height: 30px;
+          width: 30px;
+          border-radius: 100px;
+          border: 1px solid $color-deep-gray;
+          transition: 0.5s ease;
+          &:hover {
+            opacity: 0.8;
+            border: 1px solid $color-vincu-info-action;
+            & * {
+              color: $color-vincu-info;
+            }
+          }
+          & i {
+            position: relative;
+            top: 8%;
+            left: 28%;
+            font-size: 14px;
+            transition: 0.5s ease;
+          }
+        }
+      }
       & > .blog-logo-container {
-        width: 218px;
+        width: 141px;
         height: 90px;
         display: block;
+        margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+        & img {
+          width: 100%;
+        }
+        @media(max-width: $screen-lg) {
+          width: 100%;
+          & img {
+            width: 141px;
+            display: block;
+            margin: 0 auto;
+          }
+        }
       }
       & > .blog-btn-container {
+        @media(max-width: $screen-lg) {
+          margin: 5rem auto 0;
+        }
         & > a.btn {
+          font-family: 'Open Sans', sans-serif;
           @include shadow(1);
-          position: absolute;
-          top: 3rem;
-          right: 10%;
+          right: 5%;
           font-size: 16px;
-          @media(max-width: $screen-md) {
-            right: 5%;
-            font-size: 12px;
+          @media(min-width: $screen-md) {
+            position: absolute;
+            top: 3rem;
           }
-          @media(max-width: $screen-sm) {
-            margin: 4rem auto 0;
+          @media(max-width: $screen-lg) {
             display: block;
             position: relative;
             right: auto;
-            top: auto;
+            top: -2rem;
             left: auto;
-            width: 50%;
+          }
+          @media(max-width: $screen-sm) {
+            position: relative;
+            top: 1.5rem;
           }
         }
       }
     }
-    & > .row:last-child {
+    & > .row:nth-child(2) {
+      margin-bottom: 2rem;
+      position: relative;
+      @media(max-width: $screen-lg) {
+        margin-top: -8rem;
+        margin-bottom: 6rem;
+      }
       & > p {
+        font-family: 'Open Sans', sans-serif;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         color: $color-deep-gray;
         font-style: italic;
         text-align: center;
@@ -50,6 +129,102 @@ blog-nav-v1 {
         @media(max-width: $screen-sm) {
           max-width: 250px;
         }
+      }
+    }
+    & > .row:last-child {
+      border-top: 1px solid $color-deep-gray;
+      padding: 1.5rem 0 0rem;
+      margin-bottom: -2rem;
+      width: 100vw;
+      left: calc(-1 * (100vw - 100%) / 2);
+      position: relative;
+      max-width: none;
+      @media(max-width: $screen-lg) {
+        border-top: none;
+      }
+      & ul.categories.mobile-menu {
+        @media(max-width: $screen-lg) {
+          display: block;
+        }
+        border-top: 1px solid $color-deep-gray;
+        display: none;
+        list-style: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        & li {
+          font-size: 16px;
+          transition: 0.5s ease;
+          &:last-child {
+            padding-bottom: 1rem;
+            margin: 0;
+            border-bottom: none;
+          }
+          & a {
+            font-family: 'Open Sans', sans-serif;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      & ul.categories.desktop-menu {
+        @media(max-width: $screen-lg) {
+          display: none;
+        }
+        list-style: none;
+        text-align: center;
+        margin-top: -3rem;
+        margin-left: auto;
+        margin-right: auto;
+        & li {
+          display: inline-block;
+          padding: 0.5rem;
+          font-size: 16px;
+          transition: 0.5s ease;
+          & a {
+            font-family: 'Open Sans', sans-serif;
+            &:hover {
+              text-decoration: none;
+            }
+            &.search-btn {
+              display: inline-block;
+              position: relative;
+              height: 30px;
+              width: 30px;
+              top: 1.8rem;
+              border-radius: 100px;
+              border: 1px solid $color-deep-gray;
+              transition: 0.5s ease;
+              &:hover {
+                opacity: 0.8;
+                border: 1px solid $color-vincu-info-action;
+                & * {
+                  color: $color-vincu-info;
+                }
+              }
+              & i {
+                position: relative;
+                top: 1px;
+                font-size: 14px;
+                transition: 0.5s ease;
+              }
+            }
+          }
+          &:after {
+            padding-left: 0.5rem;
+            content: '|';
+          }
+          &:last-child {
+            &:after {
+              padding-left: 0.5rem;
+              content: '';
+            }
+          }
+        }
+      }
+      & a.search-button {
+        display: inline;
       }
     }
   }
