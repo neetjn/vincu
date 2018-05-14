@@ -9,6 +9,7 @@ banner-v1 {
     height: auto;
     margin: 4rem auto;
     width: 100%;
+    max-width: 750px;
     & .banner-image {
       content: '';
       display: block;

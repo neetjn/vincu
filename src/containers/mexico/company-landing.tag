@@ -1,5 +1,4 @@
 <company-landing>
-  <blog-nav-v1 />
   <banner-v1 />
   <timeline-v1 />
   <countries-v1 />

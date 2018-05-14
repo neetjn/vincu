@@ -11,7 +11,7 @@
           <h1 class="vincu-title-super">
             En El Área<br />COMERCIAL
           </h1>
-          <a href="https://andreaatehortua.typeform.com/to/haIRwe" class="btn btn-vincu btn-inverse-info btn-bold btn-lg">
+          <a href="https://vincu.com/mx/landing/empresa/" class="btn btn-vincu btn-inverse-info btn-bold btn-lg">
             Más Información
           </a>
           <p class="candidate-info">
