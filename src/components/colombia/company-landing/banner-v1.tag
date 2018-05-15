@@ -12,11 +12,11 @@
             En El Área<br />COMERCIAL
           </h1>
           <a href="https://vincu.com/co/landing/empresa/" class="btn btn-vincu btn-inverse-info btn-bold btn-lg">
-            Más Información
+            Publicar Vacante
           </a>
           <p class="candidate-info">
             ¿Buscas trabajo en el área comercial?
-            <a href="#">Clic aquí</a>
+            <a href="https://vincu.com/co/landing/candidato/">Clic aquí</a>
           </p>
         </div>
       </div>

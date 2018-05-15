@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-md-4 col-sm-4 animated fadeIn" each={ post in posts }>
         <div class="thumbnail">
-          <a href={ post.link }>
+          <a target="_blank" href={ post.link }>
             <img src={ post.media } alt={ post.title }>
           </a>
           <div class="body">
@@ -27,12 +27,12 @@
               </p>
             </div>
             <div class="caption">
-              <a href={ post.link }>
+              <a target="_blank" href={ post.link }>
                 <h4 class="vincu-title-lite">{ post.title }</h4>
               </a>
               <p class="content">{ post.content }</p>
               <p>
-                <a class="read-more" href={ post.link }>Leer más</a>
+                <a target="_blank" class="read-more" href={ post.link }>Leer más</a>
               </p>
             </div>
           </div>

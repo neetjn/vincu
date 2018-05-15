@@ -9,7 +9,7 @@
         </a>
       </div>
       <div class="blog-btn-container">
-        <a href="https://vincu.com" class="btn btn-lg btn-vincu btn-bolder btn-outline-info">
+        <a target="_blank" href="https://vincu.com" class="btn btn-lg btn-vincu btn-bolder btn-outline-info">
           Ir a vincu.com <i class="ico ico-right fa fa fa-lg fa-angle-right" style="position: relative; top: -2px;"></i>
         </a>
       </div>
@@ -47,7 +47,7 @@
     })
     fetch('https://vincu.com/wp-json/wp/v2/categories')
       .then(result => result.json().then(categories => {
-        self.categories = categories.filter(category => category.id != 1)
+        self.categories = categories.filter(category => category.id != 1 && category.count > 0)
         self.update()
       }))
 
