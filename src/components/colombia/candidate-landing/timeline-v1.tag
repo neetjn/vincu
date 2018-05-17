@@ -13,7 +13,7 @@
             <i class="ico vincu-icon vincu-email"></i>
           </span>
         </li>
-        <li>
+        <li ref="bubbleCheck">
           <span class="timeline-bubble">
             <i class="ico vincu-icon vincu-checked" style="font-size: 16px; top: 15px; right: 2.5px;"></i>
           </span>
@@ -120,13 +120,26 @@
 
     const self = this
 
-    console.log(anime)
+    self.animatedBubbles = false
 
     self.on('mount', () => {
+      /** Verify timeline bubbles are in view. */
+      function bubblesInView() {
+        const bounding = self.refs.bubbleCheck.getBoundingClientRect()
+        return (
+          bounding.top >= 0 &&
+          bounding.left >= 0 &&
+          bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        )
+      }
+
       /**
        * Animate timeline bubbles in succession.
        * Assumes each animation will take no longer than 2000 ms / 2s.
        * Will return a promise which will be resolved when the animations are finished for all items.
+       * @param {bool} showBubble - Toggle bubbles visibility.
+       * @returns {Promise}
        */
       function animateBubbles(showBubble = false) {
         const scaleDuration = 1000;
@@ -173,9 +186,14 @@
           })
         })
       }
-      animateBubbles().then(() => setTimeout(() => {
-        animateBubbles(true)
-      }), 2500)
+
+      window.addEventListener('scroll', e => {
+        if (!self.animatedBubbles && bubblesInView()) {
+          animateBubbles().then(() => setTimeout(() => {
+            animateBubbles(true)
+          }), 2500)
+        }
+      })
     })
   </script>
 </timeline-v1>

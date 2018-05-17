@@ -17,7 +17,7 @@
     <div class="row">
       <p>La única plataforma de reclutamiento especializada en el área comercial</p>
     </div>
-    <div class="row">
+    <div class="row" id="categoriesContainer">
       <ul class="categories desktop-menu">
         <li each={ category in categories }>
           <a href={ category.link }>
