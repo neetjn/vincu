@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
   entry: '',
@@ -42,7 +43,18 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' }
+          { loader: 'sass-loader' },
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: function () {
+                return [autoprefixer({
+                  'browsers': ['> 1%', 'last 2 versions']
+                })]
+              }
+            }
+          }
         ]
       },
       {

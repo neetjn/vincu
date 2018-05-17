@@ -1,0 +1,126 @@
+timeline-v1 {
+  display: block;
+  background-color: $color-white;
+  text-align: center;
+  & .timeline-wrapper {
+    & .timeline-accessories {
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      right: 0;
+      margin-top: 4rem;
+      & > h1 {
+        cursor: default;
+        padding: 2rem 5rem 3rem;
+        font-size: 40px;
+        background-color: $color-white;
+        border: 1px solid #979797;
+        box-shadow: 0 2px 2px 2px rgba(0,0,0,0.11);
+        width: intrinsic;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: max-content;
+        margin: 0 auto;
+      }
+      & ul.timeline-steps {
+        list-style: none;
+        padding: 1rem;
+        margin-top: 10rem;
+        & li {
+          display: block;
+          margin: 8rem auto;
+          padding: 0;
+          height: 50px;
+          width: 50px;
+          text-align: center;
+          box-shadow: 0px 0px 5px 8px rgba(169, 230, 230, 1);
+          border-radius: 100px;
+          & span.timeline-bubble {
+            display: block;
+            height: 50px;
+            width: 50px;
+            background-color: $color-white;
+            border: 1px solid $color-vincu-steps-bubble-active;
+            border-radius: 100px;
+            & i {
+              font-size: 20px;
+              position: relative;
+              top: 12.5px;
+              color: $color-vincu-info;
+            }
+            &.timeline-bubble-focus {
+              background-color: $color-vincu-steps-bubble-active;
+              & i {
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+    & > .col-sm-6 {
+      padding-top: 16rem;
+      & ul.timeline-list {
+        list-style: none;
+        text-align: left;
+        width: intrinsic;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: max-content;
+        & > li {
+          margin: 8rem;
+          min-height: 30px;
+          max-width: 325px;
+          @media(min-width: $screen-xl) {
+            max-width: 460px;
+          }
+          &.timeline-focused-item {
+            & * {
+              color: $color-vincu-info;
+            }
+          }
+          & * {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+      &#candidateList {
+        border-right: 1px solid $color-vincu-text;
+        & h1 {
+          text-align: right;
+          margin-right: 8rem;
+        }
+        & ul.timeline-list {
+          margin-left: auto;
+        }
+      }
+      &#companyList {
+        background-image: linear-gradient(to bottom, #f1faf9, #f4fbfc, #f9fcfe, #fdfdff, #ffffff);
+        & h1 {
+          text-align: left;
+          margin-left: 8rem;
+        }
+        & ul.timeline-list {
+          margin-right: auto;
+          padding-left: 0;
+        }
+      }
+      & .device-image-container {
+        margin: 0 auto;
+        &#deviceMobile {
+          height: 383px;
+          width: 439px;
+          background: url('https://s3-us-west-1.amazonaws.com/vincuventas/candidateLandingCellphone.jpg') no-repeat center;
+          background-size: contain;
+        }
+        &#deviceLaptop {
+          height: 383px;
+          width: 439px;
+          background: url('https://s3-us-west-1.amazonaws.com/vincuventas/vincu-laptop.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

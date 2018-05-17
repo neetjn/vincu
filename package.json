@@ -24,6 +24,8 @@
     "eslint-plugin-riot": "^0.1.7",
     "file-loader": "^1.1.11",
     "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.5",
+    "postcss-scss": "^1.0.5",
     "riot": "^3.9.3",
     "riot-animore": "^1.0.0",
     "riot-tag-loader": "^2.0.2",

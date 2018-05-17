@@ -1,0 +1,134 @@
+banner-v1 {
+  display: block;
+  overflow: hidden;
+  & > .banner-background {
+    text-align: center;
+    height: 100vw;
+    padding: 2rem;
+    background: url('https://s3-us-west-1.amazonaws.com/vincuventas/candidateLandingBg.jpg') no-repeat center;
+    background-size: cover;
+    background-position: 42.3%;
+    position: relative;
+    height: 507px;
+    @media(max-width: $screen-sm) {
+      height: 190px;
+    }
+    & h5 {
+      cursor: default;
+      font-size: 22px;
+      line-height: 24px;
+      color: $color-white;
+      padding-top: 4rem;
+      margin-left: auto;
+      margin-right: auto;
+      @media(max-width: $screen-sm) {
+        padding-top: 0;
+        margin-bottom: -3rem;
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 200px;
+        font-weight: 600;
+      }
+    }
+    & h1 {
+      cursor: default;
+      margin-bottom: 4rem;
+      position: relative;
+      z-index: 100;
+      font-size: 64px;
+      line-height: 52px;
+      font-weight: 800;
+      color: $color-white;
+      @media(max-width: $screen-sm) {
+        padding-top: 2rem;
+        font-size: 36px;
+        line-height: 32px;
+      }
+    }
+    & .banner-panels {
+      height: 507px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      @media(max-width: $screen-sm) {
+        height: 190px;
+      }
+      & .banner-panel {
+        @media(max-width: $screen-sm) {
+          height: 165px;
+          width: 165px;
+        }
+        @media(min-width: $screen-sm) {
+          height: 280px;
+          width: 280px;
+        }
+        @media(min-width: $screen-md) {
+          height: 325px;
+          width: 325px;
+        }
+        @media(min-width: $screen-lg) {
+          height: 500px;
+          width: 500px;
+        }
+        &#panelCandidate {
+          background: url('https://s3-us-west-1.amazonaws.com/vincuventas/candidateLandingLeft.png') no-repeat center;
+          background-size: contain;
+          background-position-x: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          @media(max-width: $screen-sm) {
+            margin-left: -7rem;
+          }
+          @media(min-width: $screen-sm) {
+            margin-left: -7rem;
+          }
+          @media(min-width: $screen-md) {
+            margin-left: 0;
+          }
+        }
+        &#panelCompany {
+          background: url('https://s3-us-west-1.amazonaws.com/vincuventas/candidateLandingRight.png') no-repeat center;
+          background-size: contain;
+          position: absolute;
+          right: 2rem;
+          bottom: 0;
+          @media(max-width: $screen-sm) {
+            margin-right: -7rem;
+          }
+          @media(min-width: $screen-sm) {
+            margin-right: -7rem;
+          }
+          @media(min-width: $screen-md) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    & .row .col-sm-6 {
+      & a {
+        font-size: 16px;
+        width: 229px;
+      }
+      &:first-child {
+        padding-right: 2.5rem;
+        & a {
+          float: right;
+          margin-right: 1rem;
+        }
+      }
+      &:last-child {
+        padding-left: 2.5rem;
+        & a {
+          float: left;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  & .banner-links {
+    & a {
+      margin: 1rem 0;
+    }
+  }
+}

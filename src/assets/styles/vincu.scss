@@ -2,6 +2,13 @@
   These style rules assumes bootstrap3 rules are already available.
 **/
 
+.vincu-sub-cursive {
+  & small {
+    text-transform: lowercase;
+    font-style: italic;
+  }
+}
+
 .vincu-title {
   & small {
     font-size: 18px;
