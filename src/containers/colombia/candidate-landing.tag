@@ -1,4 +1,4 @@
-<candidate-landing>
+<candidate-landing class="animated fadeIn">
   <banner-v1 />
   <timeline-v1 />
   <countries-v1 />

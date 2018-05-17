@@ -1,5 +1,9 @@
 countries-v1 {
   display: block;
+  margin-top: -10rem;
+  @media(max-width: $screen-sm) {
+    margin-top: 0;
+  }
   & > .container > h1.vincu-title {
     font-size: 48px;
     margin-top: 6rem;
@@ -9,7 +13,7 @@ countries-v1 {
     }
   }
   & .country-wrapper {
-    background: url('https://vincu.com/wp-content/uploads/2018/04/bgCentro.png?id=1430');
+    background: url('https://s3-us-west-1.amazonaws.com/vincuventas/candidateLandingCountryWrapper.png');
     //background: url('https://s3-us-west-1.amazonaws.com/vincuventas/trianglify.svg');
     background-size: cover;
     @media(min-width: $screen-md) {
@@ -28,7 +32,7 @@ countries-v1 {
     & .country-count-container {
       margin-top: 1rem;
       & .country-count {
-        font-size: 72px;
+        font-size: 62px;
         @media(min-width: $screen-lg) {
           font-size: 82px;
         }

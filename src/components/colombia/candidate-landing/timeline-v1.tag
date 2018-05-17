@@ -2,7 +2,7 @@
   <div class="row timeline-wrapper">
     <div class="timeline-accessories">
       <h1 class="vincu-title-lite animated slideInDown">¡Vincu hace el trabajo por ti!</h1>
-      <ul class="timeline-steps">
+      <ul class="timeline-steps hidden-xs">
         <li>
           <span class="timeline-bubble">
             <i class="ico vincu-icon vincu-crearOferta"></i>
@@ -25,6 +25,7 @@
         <small>si eres un…</small><br/>
         Candidato
       </h1>
+      <div class="device-image-container animated slideInLeft hidden-md hidden-lg hidden-xl hidden-sm" id="deviceMobile"></div>
       <ul class="timeline-list">
         <li>
           <p>
@@ -43,30 +44,32 @@
           <ul class="timeline-list-info-classifications">
             <li>
               <i class="vincu-icon vincu-freelance"></i><br />
-              <label>Los más recomendados</label>
+              <label>Enviada</label>
             </li>
             <li>
               <i class="vincu-icon vincu-leido"></i><br />
-              <label>Pendientes<br /> por aplicar</label>
+              <label>Leido</label>
             </li>
             <li>
               <i class="vincu-icon vincu-meGusta"></i><br />
-              <label>Pendientes<br /> por aplicar</label>
+              <label>Les ha gustado</label>
             </li>
             <li>
               <i class="vincu-icon vincu-noMeGusta"></i><br />
-              <label>No ajusta<br /> al perfil</label>
+              <label>Tu perfil no ajusta</label>
             </li>
           </ul>
         </li>
       </ul>
-      <div class="device-image-container animated slideInLeft" id="deviceMobile"></div>
+      <a id="candidateReferral" class="btn btn-vincu btn-bolder btn-lg btn-info hidden-sm hidden-md hidden-lg hidden-xl" href="https://vincu.com/co/landing/candidato/">Crear tu hoja de vida</a>
+      <div class="device-image-container animated slideInLeft hidden-xs" id="deviceMobile"></div>
     </div>
     <div class="col-sm-6 container" id="companyList">
       <h1 class="vincu-title vincu-sub-cursive">
         <small>si eres una…</small><br/>
         Empresa
       </h1>
+      <div class="device-image-container animated slideInRight hidden-md hidden-lg hidden-xl hidden-sm" id="deviceLaptop"></div>
       <ul class="timeline-list">
         <li>
           <p>
@@ -86,7 +89,7 @@
             <ul class="timeline-list-info-classifications">
               <li>
                 <i class="vincu-icon vincu-recomendados" style="color: #fed51d;"></i><br />
-                <label>Los más recomendados</label>
+                <label>Los más<br />recomendados</label>
               </li>
               <li>
                 <i class="vincu-icon vincu-porAplicar"></i><br />
@@ -100,8 +103,16 @@
           </ul>
         </li>
       </ul>
-      <div class="device-image-container animated slideInRight" id="deviceLaptop"></div>
-      <!-- https://s3-us-west-1.amazonaws.com/vincuventas/vincu-laptop.png -->
+      <a id="companyReferral" class="btn btn-vincu btn-bolder btn-lg btn-outline-info hidden-sm hidden-md hidden-lg hidden-xl" href="https://vincu.com/co/landing/empresa/">Publicar tu oferta</a>
+      <div class="device-image-container animated slideInRight hidden-xs" id="deviceLaptop"></div>
+    </div>
+  </div>
+  <div class="timeline-referral-wrapper row hidden-xs">
+    <div class="col-sm-6 referral-container">
+      <a id="candidateReferral" class="btn btn-vincu btn-bolder btn-lg btn-info" href="https://vincu.com/co/landing/candidato/">Crear tu hoja de vida</a>
+    </div>
+    <div class="col-sm-6 referral-container">
+      <a id="companyReferral" class="btn btn-vincu btn-bolder btn-lg btn-outline-info" href="https://vincu.com/co/landing/empresa/">Publicar tu oferta</a>
     </div>
   </div>
   <script>
@@ -117,7 +128,7 @@
        * Assumes each animation will take no longer than 2000 ms / 2s.
        * Will return a promise which will be resolved when the animations are finished for all items.
        */
-      function animateBubbles() {
+      function animateBubbles(showBubble = false) {
         const scaleDuration = 1000;
         const scaleDelay = 250;
         return new Promise((resolve, reject) => {
@@ -128,18 +139,32 @@
                 targets: node,
                 scale: [
                   {
-                    value: 0,
+                    value: 1,
                     duration: scaleDuration,
                     easing: 'easeInElastic'
                   },
                   {
-                    value: 1,
+                    value: 0,
                     duration: scaleDuration,
                     easing: 'easeInElastic'
                   }
                 ],
                 complete: () => {
                   if (index === timelineBubbles.length - 1) {
+                    if(showBubble) {
+                      timelineBubbles.forEach((node, index) => {
+                        anime({
+                          targets: node,
+                          scale: [
+                            {
+                              value: 1,
+                              duration: scaleDuration,
+                              easing: 'easeInElastic'
+                            }
+                          ]
+                        })
+                      })
+                    }
                     resolve()
                   }
                 }
@@ -149,7 +174,7 @@
         })
       }
       animateBubbles().then(() => setTimeout(() => {
-        animateBubbles()
+        animateBubbles(true)
       }), 2500)
     })
   </script>
